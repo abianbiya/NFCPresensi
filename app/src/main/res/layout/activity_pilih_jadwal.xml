@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PilihJadwalActivity"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/rl"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/dosen_image"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dosen_image"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway"
+            android:textStyle="bold"
+            android:text="Muhamad Anbiya, S.Kom., M.Kom."
+            android:id="@+id/dosen_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dosen_image"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway"
+            android:layout_below="@id/dosen_name"
+            android:text="NIP 97032618111559"
+            android:id="@+id/dosen_nip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dosen_image"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway"
+            android:text="LOGOUT"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:layout_alignBottom="@id/dosen_image"
+            android:id="@+id/dosen_logout" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl"
+        android:id="@+id/rv_jadwal"
+        android:clipToPadding="true"
+        android:saveEnabled="false"/>
+
+</RelativeLayout>

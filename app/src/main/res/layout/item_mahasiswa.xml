@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mahasiswa_name"
+        android:fontFamily="@font/raleway"
+        android:text="Muhamad Anbiya"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mahasiswa_nim"
+        android:text="4611414022"
+        android:layout_below="@id/mahasiswa_name"
+        android:fontFamily="@font/raleway"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="14.23 WIB"
+        android:layout_centerVertical="true"
+        android:id="@+id/mahasiswa_time"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="1dp"
+        android:fontFamily="@font/raleway"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_item_label"/>
+
+
+</RelativeLayout>
